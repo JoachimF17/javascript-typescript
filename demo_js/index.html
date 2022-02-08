@@ -2,13 +2,43 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Demo JS</title>
+	<link rel="stylesheet" href="./css/global.css">
+	<title id="title">Demo JS</title>
 </head>
 <body>
 	<h1>Demo JS</h1>
 
-	<button onclick="alert('vous avez cliqué')">bouton</button>
+	<div id="text-here" style="border: 1px solid black;"></div>
 
-	<script src="./js/exo5.js"></script>
+	<button onclick="alert('vous avez cliqué')">bouton</button><br>
+
+	<button id="bouton-exo" onclick="ajoutListe()">ajout liste</button>
+	<ul id="liste-exo"></ul>
+	<br>
+	<br>
+	<br>
+	
+	<table>
+		<tr>
+			<td>Chaise</td>
+			<td>25</td>
+			<td><button id="bouton1">Ajouter produit</button></td>
+		</tr>
+		<tr>
+			<td>Table</td>
+			<td>150</td>
+			<td><button id="bouton2">Ajouter produit</button></td>
+		</tr>
+		<tr>
+			<td>Meuble TV</td>
+			<td>250</td>
+			<td><button id="bouton3">Ajouter produit</button></td>
+		</tr>
+	</table>
+	
+	<table id="table-exo"></table>
+	<p id="prix-exo"></p>
+
+	<script src="./js/exo9.js"></script>
 </body>
 </html>
