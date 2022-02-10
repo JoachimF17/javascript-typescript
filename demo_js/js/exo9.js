@@ -28,12 +28,15 @@ var suppr = function ()
 	
 	let td = document.getElementById('prix'+i);
 	let tot = parseInt(td.getAttribute('tot'));
-	tot -= tab[i][1];
-	td.innerText = tot;
-	td.setAttribute('tot', tot);
-	
-	total -= tab[i][1];
-	prix.innerText = 'Prix total : '+total;
+	if(tot > 0)
+	{
+		tot -= tab[i][1];
+		td.innerText = tot;
+		td.setAttribute('tot', tot);
+		
+		total -= tab[i][1];
+		prix.innerText = 'Prix total : '+total;
+	}
 }
 
 var ajoutArticle = function ()
